@@ -1,0 +1,27 @@
+name:                sketches
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/yogeshsajanikar/sketches#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Yogesh Sajanikar
+maintainer:          yogesh_sajanikar@yahoo.com
+copyright:           2019 Yogesh Sajanikar
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.Sketch
+                     , Data.Sketch.AMS
+  build-depends:       base >= 4.7 && < 5
+                     , vector
+                     , hashable
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/yogeshsajanikar/sketches
